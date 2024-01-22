@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 16rem;
+}
+
+nav {
+    background-color: #ff7070;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    float: left;
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.card-container{
+    display: flex;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, rgba(244,245,188,1) 0%, rgba(232,165,228,1) 100%);
+}
+
+.card-left{
+    width: 50%;
+    padding: 60px;
+}
+
+.card-left h1{
+    font-size: 40px;
+    letter-spacing: .3rem;
+    padding-bottom: 40px;
+}
+
+.card-left p{
+    width: 75%;
+    font-size: 18px;
+    line-height: 26.25px;
+    padding-bottom: 40px;
+}
+
+.card-left button{
+    background-color: #ff7070;
+    color: white;
+    outline: white;
+    font-size: 18px;
+    padding: 10px 50px;
+}
+
+.card-right{
+    width: 65%;
+}
+
+.side{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cardside-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardside-right{
+    width: 50%;
+}
+
+.cardside-cont{
+    background-color: #fd8383;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 65%;
+}
+
+h4{
+    font-weight: 400;
+    max-width: 100%;
+    height: auto;
+}
+
+.cardside-cont h1{
+    font-size: 40px;
+    letter-spacing: .5rem;
+    padding: 30px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.cardside-cont a{
+    color: black;
+    text-decoration: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+    .card-container {
+        flex-direction: column;
+      }
+    
+      .card-left,
+      .card-right {
+        width: 100%;
+      }
+}
