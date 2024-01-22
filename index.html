@@ -131,11 +131,27 @@ h4{
 }
 
 @media (max-width: 600px) {
-    nav a {
-        float: none;
-        width: 100%;
-        text-align: left;
-    }
+  body{
+    margin: 0;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav img {
+    display: inline;
+  }
+  .card-left{
+    padding: 20px;
+  }
+  .card-left p{
+    width: 95%;
+  }
     .card-container {
         flex-direction: column;
       }
@@ -143,6 +159,13 @@ h4{
       .card-left,
       .card-right {
         width: 100%;
+      }
+      .cardside-cont{
+        width: 85%;
+      }
+
+      .cont{
+        justify-content: center;
       }
 }
     </style>
@@ -155,6 +178,7 @@ h4{
       <a href="#restaurants">Restaurants</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact Us</a>
+      <img src="https://res.cloudinary.com/dcjpuwiph/image/upload/v1705858492/hkarc8vkugumquvn3m5f.png" alt="Image"  width="30px" height="30px"/>
     </nav>
     <section class="card-container">
       <div class="card-left">
